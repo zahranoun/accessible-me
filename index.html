@@ -52,11 +52,11 @@
           <section>
           <h1>Meet the owner</h1>
           <region role="region">
-          <ul>
-            <li>Name: John Doe</li>
-            <li>Title: CEO</li>
-            <li>Email: johnjoe@jambox.ca</li>
-            <li>Phone: 613-000-0000</li>
+          <ul itemscope itemtype="https://schema.org/Person">
+            <li itemprop="Name:">John Doe</li>
+            <li itemprop="Title:">CEO</li>
+            <li itemprop="Email:">johnjoe@jambox.ca</li>
+            <li itemprop="Phone:">613-000-0000</li>
           </ul>
           <h1>Address</h1>
           <p>Jambox Studios 123 Guitar Road, Musicville, Danceistan B3T 0L0</p>
@@ -65,13 +65,13 @@
         </div>
         <div class="contact-section">
           <section>
-            <form role="form"> 
           <h1>Contact Us</h1>
+          <form role="form">
           <form action="thanks.html">
-            <label for="Full Name:">Full Name:</label>
-            <input type="text" placeholder="Full Name" />
-            <label for="Email">Email</label>
-            <input type="text" placeholder="Email" />
+            <label>Full Name</label>
+            <input type="text" id="Full Name:" name="Full Name:" aria-label="Enter your full name">
+            <input type="text" placeholder="Full Name" aria-label="Enter your email"/>
+            <input type="text" placeholder="Email" aria-label="Enter your subject" />
             <input type="text" placeholder="Subject" />
             <b>Your Message</b>
             <textarea></textarea>
